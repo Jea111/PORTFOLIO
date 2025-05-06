@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="/public/style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar">
+        <h1>LOGO</h1>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="productos">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button id="toggleButton">🌙</button>
+      </nav>
+    </section>
+
+    <main>
+      <section class="container-carrito">
+        <h2>Carrito</h2>
+        <ul class="productos-carrito"></ul>
+        <div id="total">
+          <strong>Total: </strong><span id="totalPrecio">$0</span><br />
+          <button class="btnCompra" id="btnFinish">Finalizar compra</button>
+        </div>
+      </section>
+
+      <section class="productos">
+        <!-- Producto 1 -->
+        <div class="producto" data-precio="18000">
+          <h2>SALCHIPAPA</h2>
+          <img
+            src="https://image.shutterstock.com/image-photo/peru-traditional-culinary-salchipapas-260nw-128941898.jpg"
+            alt="SALCHIPAPA ESPECIAL"
+          />
+          <h3>SALCHIPAPA ESPECIAL</h3>
+          <p>Papas, choricitos, tocineta, queso mozzarella, salsa y gaseosa.</p>
+          <span>Precio: $18.000</span>
+          <button class="btnAgregar">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto" data-precio="25000">
+          <h2>PAPA MECHA</h2>
+          <img
+            src="https://image.shutterstock.com/image-photo/peru-traditional-culinary-salchipapas-260nw-128941898.jpg"
+            alt="PAPA MECHA"
+          />
+          <h3>PAPA MECHA DEL SUR</h3>
+          <p>Papas, carne desmechada, tocineta, doble queso y gaseosa.</p>
+          <span>Precio: $25.000</span>
+          <button class="btnAgregar">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 3 -->
+
+        <div class="producto" data-precio="30000">
+          <h2>PAPA MIXTA</h2>
+          <img
+            src="https://image.shutterstock.com/image-photo/peru-traditional-culinary-salchipapas-260nw-128941898.jpg"
+            alt="PAPA MIXTA"
+          />
+          <h3>PAPA MIXTA COMPLETA</h3>
+          <p>
+            Papas, carne y pollo desmechado, tocineta, queso, ensalada y
+            gaseosa.
+          </p>
+          <span>Precio: $30.000</span>
+          <button class="btnAgregar">Agregar al carrito</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+      <p>github.com/jea111</p>
+    </footer>
+
+    <script src="/public/script.js"></script>
+  </body>
+</html>

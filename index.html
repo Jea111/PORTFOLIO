@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/style.css" />
     <script
       src="https://kit.fontawesome.com/c28f992cd8.js"
@@ -13,10 +14,12 @@
   <body>
     <header>
       <nav id="navbar">
-        <div class="logo">JEHAN <span>CORTES</span></div>
+        <div class="logo" data-aos="fade-right" data-aos-duration="1500">
+          JEHAN <span>CORTES</span>
+        </div>
         <ul class="nav-links">
           <li><a href="#inicio">INICIO</a></li>
-          <li><a href="#proyectos">PROYECTOS</a></li>
+          <li><a href="#projects">PROYECTOS</a></li>
           <li><a href="#experiencia">EXPERIENCIA</a></li>
         </ul>
       </nav>
@@ -24,9 +27,14 @@
     <main>
       <section id="inicio" class="hero">
         <div class="hero-content">
-          <div class="hero-text">
+          <div
+            class="hero-text"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <h1>JEHAN CORTES</h1>
-            <h2>DESARROLLADOR WEB PRACTICANTE</h2>
+            <h2>ESTUDIANTE DE DESARROLLO DE SOFTWARE</h2>
             <p>
               ¡Hola! Soy un desarrollador web apasionado por la tecnología y el
               diseño. Me encanta crear experiencias digitales únicas y
@@ -37,13 +45,26 @@
               habilidades y seguir aprendiendo en el campo del desarrollo web.
             </p>
             <div class="social-links">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/Jea111" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/jehan-aldayr-592b0234b/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://www.facebook.com/jehan.cortes.7" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
             </div>
-            <a href="#contacto" class="btn">Contactame</a>
+            <a
+              href="https://www.linkedin.com/in/jehan-aldayr-592b0234b/"
+              class="btn"
+              target="_blank"
+              >Contactame</a
+            >
           </div>
-          <div class="hero-image">
+          <div class="hero-image" data-aos="fade-left" data-aos-duration="1500">
             <img src="/assets/img-portfolio.jpg" alt="Hero Image" />
           </div>
         </div>
@@ -57,7 +78,7 @@
           <div class="timeline-item">
             <div class="timeline-content">
               <span class="date">2024- actualidad</span>
-              <h3>PRACTICANTE EN DESARROLLO WEB</h3>
+              <h3>ESTUDIANTE EN DESARROLLO DE SOFTWARE</h3>
               <h4>POLITECNICO DE COLOMBIA</h4>
               <p>
                 Actualmente estoy realizando mis estuioos en el Politécnico de
@@ -68,14 +89,15 @@
                 <li>HTML5</li>
                 <li>CSS</li>
                 <li>JAVASCRIPT</li>
+                <li>MySQL</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      <section class="projects" id="projects">
+      <section class="projects" id="projects" data-aos="fade-up">
         <h2 class="section-title">PROYECTOS PERSONALES</h2>
-        <div class="projects-container">
+        <div class="projects-container" data-aos="zoom-out-down">
           <div class="projets-card">
             <div class="projets-img">
               <h2 class="section-title"><span> HOME LANDING </span></h2>
@@ -112,7 +134,7 @@
             </div>
           </div>
 
-          <div class="projets-card">
+          <div class="projets-card" data-aos="zoom-out-down">
             <div class="projets-img">
               <h2 class="section-title"><span> GALLERY PAGE NIKE </span></h2>
               <!-- <img
@@ -128,7 +150,7 @@
                 alt="contact"
               /> -->
             </div>
-            <div class="project-info">
+            <div class="project-info" data-aos="zoom-out-down">
               <h3>WEB DE NIKE</h3>
               <p>PARA PRACTICAR FRONT END</p>
 
@@ -148,9 +170,9 @@
             </div>
           </div>
 
-          <div class="projets-card">
+          <div class="projets-card" data-aos="zoom-out-down">
             <div class="projets-img">
-              <h2 class="section-title"><span> DELLIVERY PAGE NIKE </span></h2>
+              <h2 class="section-title"><span> CALCULADORA </span></h2>
               <!-- <img
                 src="/assets/Captura de pantalla 2025-03-31 080415.png"
                 alt="abouth"
@@ -159,14 +181,11 @@
                 src="/assets/Captura de pantalla 2025-03-31 080503.png"
                 alt="gallery"
               /> -->
-              <img
-                src="/assets/Captura de pantalla 2025-03-31 080548.png"
-                alt="contact"
-              />
+              <img src="/assets/calculadora.png" alt="contact" />
             </div>
-            <div class="project-info">
-              <h3>WEB DE NIKE</h3>
-              <p>PARA PRACTICAR FRONT END</p>
+            <div class="project-info" data-aos="zoom-out-down">
+              <h3>CALCULADORA LOCAl</h3>
+              <p>PARA PRACTICAR LOGICA JAVASCRIPT</p>
 
               <div class="project-tech">
                 <span>HTML</span>
@@ -174,10 +193,12 @@
                 <span>JAVASCRIPT</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Jea111/dise-o-web" target="_blank"
+                <a
+                  href="https://github.com/Jea111/local-calculadora"
+                  target="_blank"
                   ><i class="fab fa-github"></i>repositorio</a
                 >
-                <a href="https://github.com/Jea111/dise-o-web" target="_blank"
+                <a href="/select/index.html" target="_blank"
                   ><i class="fas fa-link"></i>demo</a
                 >
               </div>
@@ -190,11 +211,23 @@
       <div class="footer-content">
         <p>&copy; 2025 Jehan Cortes. Todos los derechos reservados.</p>
         <div class="social-links">
-          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://github.com/Jea111" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/jehan-aldayr-592b0234b/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.facebook.com/jehan.cortes.7" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
