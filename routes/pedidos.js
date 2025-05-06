@@ -5,9 +5,9 @@ const mysql = require("mysql2");
 // Configura tu conexión con la base de datos
 const connection = mysql.createConnection({
   host: "localhost",
-  user: "root", // Cambia si usas otro usuario
-  password: "", // Cambia si tienes contraseña
-  database: "carrito_db", // Asegúrate de tener esta base creada
+  user: "root", //
+  password: "", //
+  database: "carrito_db", //
 });
 
 // Ruta para guardar pedidos
