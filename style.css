@@ -368,3 +368,80 @@ section {
 .project-links a:hover {
   color: var(--primary-color);
 }
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  section {
+    padding: 4rem 1.5rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-info h3 {
+    font-size: 1rem;
+  }
+}
