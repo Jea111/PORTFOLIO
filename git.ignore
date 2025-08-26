@@ -1,8 +1,0 @@
-# Ignorar todo
-*
-
-# Pero no ignores estos archivos
-!.gitignore
-!index.html
-!style.css
-!/assets
